@@ -1,5 +1,10 @@
+
+
 public class Ave extends Animal {
     private String corPena;
+    
+
+
   
     @Override
     public void locomover() {
@@ -13,8 +18,25 @@ public class Ave extends Animal {
   
     @Override
     public void emitirSom() {
+
       System.out.println("Som de Ave");
     }
+
+     // Método sobrecarregado emitirSom
+     public void emitirSom(int intensidade) {
+
+
+        if (intensidade > 5) {
+            System.out.println("Som de Ave alto!");
+        } else {
+            System.out.println("Som de Ave moderado.");
+        }
+    }
+
+
+
+    
+    
   
     public void fazerNinho() {
       System.out.println("Fazendo Ninho");
